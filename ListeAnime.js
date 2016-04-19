@@ -7,7 +7,8 @@ function getEvents(f){
   .find('ul li div')
   .set({
     Nom: 'span strong',
-    Episodes: 'p strong'
+    Episodes: 'p strong',
+    "Année de parution": 'time'
   })
   .data(function(listing) {
     if(Object.keys(listing).length === 0){
