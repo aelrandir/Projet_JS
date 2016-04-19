@@ -3,6 +3,7 @@
 const Hapi = require('hapi');
 const server = new Hapi.Server();
 const path = require('path');
+const request = require('request');
 server.connection({
   port: 3000
 });
@@ -16,7 +17,7 @@ server.register(require('inert'), (err) => {
 // setup routes
 server.route({
   method: 'GET',
-  path: '/api/links',
+  path: '/api/linkqsqss',
   handler: function(request, reply){
     reply([{
       title: 'lien 1',
@@ -34,6 +35,8 @@ server.route({
   }
 });
 
+
+
 // setup routes
 server.route({
   method: 'GET',
@@ -45,11 +48,12 @@ server.route({
   }
 });
 
+
 // listen
 server.start((err) => {
 
   if (err) {
     throw err;
   }
-  console.log('Server running at:', server.info.uri);
+  console.log('Server rusdfsdfnning at:', server.info.uri);
 });

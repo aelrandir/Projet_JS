@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-    <div id="appcontainer">
-
+  <body ng-app="ListeAnime">
+    <div id="appcontainer" ng-controller="CalendarCtrl">
+      <div ui-calendar class="span8" ng-model="eventSources"></div> 
     </div>
     <script src="bundle.js" type="text/javascript"></script>
   </body>

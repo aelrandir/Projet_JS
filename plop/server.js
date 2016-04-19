@@ -7,9 +7,10 @@ require('./database')(config.postgresql, function(err, client){
     throw err;
   }
 
+
   const domain = require('./domain')(client);
 
   domain.UserRepository.findAll(function(err, users){
-    
+
   });
 });
